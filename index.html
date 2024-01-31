@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Booker</title>
+    <link rel="stylesheet" href="./styles/common.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#reservation-form">Book a Trip</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h1>Welcome to Trip Booker</h1>
+      <p>Plan your perfect trip with us.</p>
+    </section>
+
+    <section id="content">
+      <h2>Our Goal</h2>
+      <h3>We aim to provide the best trip booking experience...</h3>
+    </section>
+
+    <section id="reservation-form">
+      <h2>Book Your Trip</h2>
+      <form>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Full Name"
+          required
+        />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone Number"
+          required
+        />
+
+        <input
+          type="number"
+          id="travelers"
+          name="travelers"
+          placeholder="Number of Travelers"
+          min="1"
+          required
+        />
+
+        <select id="destination" name="destination" required>
+          <option value="">Select Destination</option>
+          <option value="paris">Paris</option>
+          <option value="new_york">New York</option>
+          <option value="tokyo">Tokyo</option>
+        </select>
+
+        <input type="date" id="travel_date" name="travel_date" required />
+
+        <textarea
+          id="special_requests"
+          name="special_requests"
+          placeholder="Special Requests"
+          rows="4"
+        ></textarea>
+
+        <input type="submit" value="Book Now" />
+      </form>
+    </section>
+
+    <footer>
+      <p>Contact us: +123 456 7890 | 123 Fake Street, Faketown</p>
+    </footer>
+  </body>
+</html>
